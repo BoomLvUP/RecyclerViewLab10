@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp">
+
+    <!-- รูปอาหาร -->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="Food Image"
+        android:src="@mipmap/ic_launcher" />
+
+    <!-- ชื่ออาหาร -->
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginStart="12dp"
+        android:text="ชื่ออาหาร"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- ราคาอาหาร -->
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLine"
+        android:layout_alignStart="@id/firstLine"
+        android:layout_marginTop="4dp"
+        android:text="50 บาท"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+</RelativeLayout>
